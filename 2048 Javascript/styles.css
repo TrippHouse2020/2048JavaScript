@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --spacing: 1.5vmin;
+    --cellsize: 20vmin;
+}
+
+body {
+    background-color: #FAF8EF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gameContainer {
+    background-color: transparent;
+}
+
+.gameTools {
+    background-color: transparent;
+    padding: var(--spacing);
+    display: flex;
+    justify-content: space-between;
+}
+.gameTools > p {
+    font-size: 2.5vmin;
+    font-weight: bold;
+}
+
+#score {
+    color: gray;
+}
+
+#time {
+    color: gray;
+}
+
+#board {
+    background-color: #BBADA0;
+    display: grid;
+    grid-template-columns: repeat(4, var(--cellsize));
+    grid-template-rows: repeat(4, var(--cellsize));
+    gap: var(--spacing);
+    padding: var(--spacing);
+    border-radius: var(--spacing);
+}
+
+.tile {
+    background-color: #CDC1B4;
+    width: var(--cellsize);
+    height: var(--cellsize);
+    font-size: 7vmin;
+    border-radius: var(--spacing);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Colored Tiles */
+/* These need to be a more variable value */
+.x2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x16 {
+    background-color: #f59575;
+    color: white;
+}
+
+.x32 {
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64 {
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128 {
+    background-color: #edce71;
+    color: white;
+}
+
+.x256 {
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512 {
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024 {
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048 {
+    background-color: #ecc230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}
+
+
+/* Animation to make the moving of tiles more seamless */
